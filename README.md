@@ -9,7 +9,7 @@ Segue a lista abaixo com as tecnologias que deverão ser usadas:
 **O trio maravilha 😂🤣**
 
 * HTML;
-* CSS;
+* CSS
 * JAVASCRIPT
 
 **Conhecimento sobre *Design UX/UI***
