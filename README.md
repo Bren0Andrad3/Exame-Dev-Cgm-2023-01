@@ -10,7 +10,7 @@ Segue a lista abaixo com as tecnologias que deverão ser usadas:
 
 * HTML;
 * CSS;
-* JAVASCRIPT.
+* JAVASCRIPT
 
 **Conhecimento sobre *Design UX/UI***
 
