@@ -1,0 +1,20 @@
+{
+    "resources": [
+        {
+            "nome": "Monkey D. Luffy",
+            "idade": "19 anos",
+            "email": "mdl@gmail.com",
+            "telefone": "99999997777",
+            "endereco": "Vila Foosha, Ilha Dawn, East Blue",
+            "cep": "49000000"
+        },
+        {
+            "nome": "Saitama",
+            "idade": "24 anos",
+            "email": "saitama@gmail.com",
+            "telefone": "99988887777",
+            "endereco": "Z-City",
+            "cep": "49000000"
+        }
+    ]
+}
