@@ -5,10 +5,6 @@
 
 ## Installation
 
-```bash
-> 
-```
-
 ### Acessa o diretorio da pasta e digita o comando abaixo para instalar as depemdências
 
 ```bash
