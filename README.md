@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 ## Prototipo do site Ouvidoria-Geral do Estado by FIGMA
 
 ### Link compartilhado do figma
@@ -9,3 +10,10 @@
 
 
 
+=======
+## Imagem da calculadora de triângulos
+
+
+![image](https://user-images.githubusercontent.com/102314911/212941603-ed902d0a-d4dd-4d8d-849a-dcef9b671428.png)
+
+>>>>>>> e0f11f1ee314b839022092c1acb7dee1705b61d1
