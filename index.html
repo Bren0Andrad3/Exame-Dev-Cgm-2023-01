@@ -7,54 +7,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programa Lados de um Triângulo</title>
     <style>
-        body {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding: 20px;
-    background-color: rgb(68, 68, 68);
+       .container {
+width: 80%;
+margin: 0 auto;
+}
+
+body {
+font-family: 'Open Sans', sans-serif;
+background-color: #f2f2f2;
+padding: 30px;
 }
 
 h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: aliceblue;
-}
-p{
-    font-size: 1em;
-    margin-bottom: 20px;
-    color: aliceblue;
+font-size: 2.5em;
+text-align: center;
+margin-bottom: 50px;
+color: #3498db;
 }
 
+p {
+font-size: 1.2em;
+text-align: center;
+margin-bottom: 20px;
+color: #7f8c8d;
+}
+
+form {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
 
 input[type="text"] {
-    padding: 10px;
-    font-size: 1em;
-    border-radius: 4px;
-    border: 1px solid gray;
-    margin-bottom: 10px;
-    width: 300px;
-    
+width: 300px;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+border: 2px solid #ccc;
+border-radius: 4px;
+font-size: 1.2em;
+
 }
 
 input[type="button"] {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 20px;
+width: 150px;
+background-color: #3498db;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 1.2em;
+transition: 0.3s;
 }
 
 input[type="button"]:hover {
-    background-color: #2980b9;
+background-color: #2980b9;
+}
+div{
+    text-align: center;
 }
 
 #outLados, #outTipo {
-    font-size: 1.5em;
-    margin-top: 20px;
+font-size: 1.5em;
+margin-top: 20px;
+text-align: center;
+color: #7f8c8d;
 }
+
+#outLados.valid, #outTipo.valid {
+color: #2ecc71;
+}
+
+#outLados.invalid, #outTipo.invalid {
+color: #e74c3c;
+}
+
+/* Responsive Design */
+
+
+
+
+
     </style>
 </head>
 
@@ -64,8 +100,10 @@ input[type="button"]:hover {
     <p>Lado A: <input type="text" name="Lado A do Triângulo" id="inA"></p>
     <p>Lado B: <input type="text" name="Lado A do Triângulo" id="inB"></p>
     <p>Lado C: <input type="text" name="Lado A do Triângulo" id="inC"></p>
+    <div>
     <input type="button" value="Verificar Lados" id="btVerificar">
     <input type="button" value="Limpar" id="btLimpar">
+    </div>
     <h3 id="outLados"></h3>
     <h3 id="outTipo"></h3>
     <script src="js.js"></script>
