@@ -1,74 +1,120 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programa Lados de um Triângulo</title>
+    <title>Fibonacci_number</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
-        body {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding: 20px;
-    background-color: rgb(68, 68, 68);
-}
+        /* Define variáveis para cores comuns */
+        :root {
+            --primary-color: #fcfcfc;
+            --secondary-color: #2ecc71;
+            --text-color: #2c3e50;
+        }
 
-h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: aliceblue;
-}
-p{
-    font-size: 1em;
-    margin-bottom: 20px;
-    color: aliceblue;
-}
+        /* Aplicação geral
 
 
-input[type="text"] {
-    padding: 10px;
-    font-size: 1em;
-    border-radius: 4px;
-    border: 1px solid gray;
-    margin-bottom: 10px;
-    width: 300px;
-    
+/* Aplicação geral */
+body {
+    padding: 9rem;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  
+  float: center;
+  text-align: center;
+  
 }
 
-input[type="button"] {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 20px;
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--text-color);
+  margin-bottom: 1rem;
+  
 }
 
-input[type="button"]:hover {
-    background-color: #2980b9;
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave na cor de fundo ao passar o mouse */
 }
 
-#outLados, #outTipo {
-    font-size: 1.5em;
-    margin-top: 20px;
+button:hover {
+  background-color: #27ae60; /* Altera a cor de fundo ao passar o mouse */
 }
+
+
+
+
+
     </style>
+
 </head>
 
-
 <body>
-    <h1>Programa Lados de um Triângulo</h1>
-    <p>Lado A: <input type="text" name="Lado A do Triângulo" id="inA"></p>
-    <p>Lado B: <input type="text" name="Lado A do Triângulo" id="inB"></p>
-    <p>Lado C: <input type="text" name="Lado A do Triângulo" id="inC"></p>
-    <input type="button" value="Verificar Lados" id="btVerificar">
-    <input type="button" value="Limpar" id="btLimpar">
-    <h3 id="outLados"></h3>
-    <h3 id="outTipo"></h3>
-    <script src="js.js"></script>
+    <div class="container">
+        <div>
+            <h1>FIBONACCI NUMERO</h1>
+        </div>
+        <div>
+            <input class="input" type="text" id="fibo" placeholder="Insira valor Fibonacci">
+        </div>
+        <div>
+            <button class="check">Encontre Fibonacci</button>
+        </div>
+        <div>
+            <p id="result">Resultado </p>
+        </div>
+    </div>
+    <script>
+
+        const InputNumber = document.querySelector("input")
+        const CheckButton = document.querySelector("button")
+        const ResultNumber = document.getElementById("result")
+
+        console.log(InputNumber)
+        console.log(CheckButton)
+
+        addEventListener("click", function () {
+
+            if (InputNumber.value === "") {
+                return;
+            }
+
+
+            let x = parseInt(InputNumber.value)
+            if (ResultNumber) {
+
+            }
+            ResultNumber.innerHTML = fibo(x)
+
+        })
+
+        function fibo(n) {
+            if(n===1) return "0";
+            let arr = [0, 1];
+            for (let i = 2; i <= n; i++) {
+                arr.push(arr[i - 1] + arr[i - 2]);
+            }
+        return arr.slice(0, n).join(',');
+        }
+
+    </script>
 </body>
 
 </html>
