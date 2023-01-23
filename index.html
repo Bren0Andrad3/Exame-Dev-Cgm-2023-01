@@ -58,10 +58,6 @@ button:hover {
   background-color: #27ae60; /* Altera a cor de fundo ao passar o mouse */
 }
 
-
-
-
-
     </style>
 
 </head>
@@ -90,20 +86,19 @@ button:hover {
         console.log(InputNumber)
         console.log(CheckButton)
 
-        addEventListener("click", function () {
+        CheckButton.addEventListener("click", function () {
+    if (InputNumber.value === "") {
+        ResultNumber.innerHTML = "Por favor, insira um valor";
+        return;
+    }
+    if(isNaN(InputNumber.value)){
+        ResultNumber.innerHTML = "Por favor, insira um número válido";
+        return;
+    }
+    let x = parseInt(InputNumber.value)
+    ResultNumber.innerHTML = fibo(x)
+});
 
-            if (InputNumber.value === "") {
-                return;
-            }
-
-
-            let x = parseInt(InputNumber.value)
-            if (ResultNumber) {
-
-            }
-            ResultNumber.innerHTML = fibo(x)
-
-        })
 
         function fibo(n) {
             if(n===1) return "0";
